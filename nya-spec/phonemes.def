@@ -1,0 +1,29 @@
+# Taygetan Phoneme Definitions
+
+## Vowel Sounds
+- a: /a/ (as in "father")
+- e: /e/ (as in "bed") 
+- i: /i/ (as in "see")
+- o: /o/ (as in "go")
+- u: /u/ (as in "moon")
+- y: /j/ or /ɪ/ (context dependent glide)
+
+## Consonant Sounds
+- n: /n/ (as in "nice")
+- t: /t/ (as in "top")
+- s: /s/ (as in "sun")
+- r: /r/ (lightly rolled 'r')
+- l: /l/ (as in "love")
+- f: /f/ (as in "flow")
+- d: /d/ (as in "dog")
+- m: /m/ (as in "mother")
+- sh: /ʃ/ (as in "sheep")
+- k: /k/ (soft 'k' sound)
+
+## Special Combinations
+- ny: /ɲ/ (palatal nasal)
+- ky: /c/ + /j/ (palatal stop with glide)
+- ty: /t/ + /j/ (alveolar with glide)
+- sy: /s/ + /j/ (fricative with glide)
+- ly: /ʎ/ + /j/ (lateral with glide)
+- my: /m/ + /j/ (nasal with glide)
