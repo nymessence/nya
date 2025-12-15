@@ -139,6 +139,32 @@ std::vector<std::unique_ptr<NyaNode>> BrahmandaLym::Satya_Lym_Deya() {
             position += 5;
             Nya_skip_whitespace();
         }
+        else if (position + 4 < content.length() && content.substr(position, 5) == "Karma") {
+            // Handle "Karma" statements - these are function/method calls
+            position += 5;
+            Nya_skip_whitespace();
+
+            // Read the function name after 'Karma'
+            std::string function_name = Nya_read_word();
+            Nya_skip_whitespace();
+
+            // Check if there are parameters (values in quotes or words)
+            std::string param = "";
+            if (position < content.length() && content[position] == '\'') {
+                position++; // Skip opening quote
+                param = Nya_read_quoted_string();
+            } else {
+                param = Nya_read_word();
+            }
+
+            // For now, just print out the karma call for debugging
+            // In a full implementation, this would create a KarmaCall node
+            std::cout << "Nya-Karma call: " << function_name;
+            if (!param.empty()) {
+                std::cout << " with param: " << param;
+            }
+            std::cout << std::endl;
+        }
         else {
             // Skip unknown tokens for now
             char c = Nya_peek();
